@@ -22,5 +22,5 @@ cache:
     - $HOME/.gradle/wrapper/
 
 script:
-  - ./gradlew assemble
-  - ./gradlew check
+  - gradle assemble
+  - gradle check
