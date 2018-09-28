@@ -6,6 +6,7 @@ jdk:
 
 script:
   - gradle build
+  - gradle test
 
 branches:
   only:
