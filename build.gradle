@@ -12,11 +12,12 @@ repositories {
     mavenCentral()
 }
 
-task helloy <<{
-    println'Helloy, world'
-}
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
+    testLogging.showStandardStreams = true
 
-/*test {
     useJUnitPlatform()
     afterSuite { desc, result ->
         if (!desc.parent)
@@ -26,7 +27,7 @@ task helloy <<{
                     "${result.failedTestCount} failures, " +
                     "${result.skippedTestCount} skipped)")
     }
-}*/
+}
 
 dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.2.0-M1'
