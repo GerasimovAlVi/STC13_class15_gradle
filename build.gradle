@@ -13,11 +13,6 @@ repositories {
 }
 
 test {
-    testLogging {
-        exceptionFormat = 'full'
-    }
-    testLogging.showStandardStreams = true
-
     useJUnitPlatform()
     afterSuite { desc, result ->
         if (!desc.parent)
