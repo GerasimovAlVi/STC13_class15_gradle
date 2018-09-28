@@ -13,8 +13,8 @@ repositories {
 }
 
 test {
-    useJUnitPlatform()
-   /* afterSuite { desc, result ->
+    /*useJUnitPlatform()
+    afterSuite { desc, result ->
         if (!desc.parent)
             println("${result.resultType} " +
                     "(${result.testCount} tests, " +
