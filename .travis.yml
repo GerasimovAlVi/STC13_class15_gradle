@@ -5,7 +5,7 @@ jdk:
   - oraclejdk8
 
 script:
-  - gradle build --rerun-tasks
+  - gradle build
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
