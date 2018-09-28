@@ -13,7 +13,7 @@ repositories {
 }
 
 test {
-    /*useJUnitPlatform()
+    useJUnitPlatform()
     afterSuite { desc, result ->
         if (!desc.parent)
             println("${result.resultType} " +
@@ -21,7 +21,7 @@ test {
                     "${result.successfulTestCount} successes, " +
                     "${result.failedTestCount} failures, " +
                     "${result.skippedTestCount} skipped)")
-    }*/
+    }
 }
 
 dependencies {
